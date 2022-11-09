@@ -1,0 +1,99 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3284379360" file="D:\Guoqiang_lab\cell_detection\cellclusterSplittingApp\cellClusterSplittingApp.prj" location="D:\Guoqiang_lab\cell_detection\cellclusterSplittingApp" name="cellClusterSplittingApp" target="target.mlapps" target-name="Package App">
+    <param.appname>cellClusterSplittingApp</param.appname>
+    <param.authnamewatermark>Boyu Lyu</param.authnamewatermark>
+    <param.email>boyu93@vt.edu</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>Interactively split the cells that were detected in one cluster</param.summary>
+    <param.description />
+    <param.screenshot>C:\Users\boyu9\AppData\Local\Temp\tp59e9aa91_6096_4d05_92d9_c512ee73417e.png</param.screenshot>
+    <param.version>0.2</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms>
+      <item>win64</item>
+    </param.platforms>
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>a79bc6b1-5e81-4856-9fc0-d151501eb752</param.guid>
+    <unset>
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.description />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\cellClusterSplittingApp.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\buildEmpDstrThinNeck.m</file>
+      <file>${PROJECT_ROOT}\caldiffMap.m</file>
+      <file>${PROJECT_ROOT}\caldiffMap_v2.m</file>
+      <file>${PROJECT_ROOT}\calGapZscoreLocalThres_minPerimeter_componentTree.m</file>
+      <file>${PROJECT_ROOT}\calMinDistRatioGatherStatInsThres_v1.m</file>
+      <file>${PROJECT_ROOT}\calMinDistRatioTestInsThres_v2.m</file>
+      <file>${PROJECT_ROOT}\estimateRadius.m</file>
+      <file>${PROJECT_ROOT}\fitTruncatedGaussian.m</file>
+      <file>${PROJECT_ROOT}\gapRegionMinPerimeter.m</file>
+      <file>${PROJECT_ROOT}\genPerimROI.m</file>
+      <file>${PROJECT_ROOT}\ksegments_orderstatistics_v2.m</file>
+      <file>${PROJECT_ROOT}\Maxtree-Processing-Toolbox-master\maxtree_of_image.mexw64</file>
+      <file>${PROJECT_ROOT}\minCutkernel.m</file>
+      <file>${PROJECT_ROOT}\principalCurvatureSeg_2D.m</file>
+      <file>${PROJECT_ROOT}\regionGrowMatrix.m</file>
+      <file>${PROJECT_ROOT}\regionGrowxx.m</file>
+      <file>${PROJECT_ROOT}\regionSplit.m</file>
+      <file>${PROJECT_ROOT}\regionSplit_withThres.m</file>
+      <file>${PROJECT_ROOT}\searchGapfinid_min_perimeter_componentTree.m</file>
+      <file>${PROJECT_ROOT}\searchThres4PartitionComponentTree.m</file>
+      <file>${PROJECT_ROOT}\testingTwoFeature.m</file>
+      <file>${PROJECT_ROOT}\testingTwoFeature_bulk.m</file>
+      <file>${PROJECT_ROOT}\tiffRead.m</file>
+      <file>${PROJECT_ROOT}\updateROI.mexw64</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="D:\Guoqiang_lab\cell_detection" name="cellclusterSplittingApp" optional="false">D:\Guoqiang_lab\cell_detection\cellclusterSplittingApp</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2021a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="gpucoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
